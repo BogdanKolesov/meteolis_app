@@ -1,8 +1,6 @@
 import styled from 'styled-components/native';
-import { Dimensions } from 'react-native';
 
-const windowWidth = Dimensions.get('window').width;
-const windowHeight = Dimensions.get('window').height;
+
 
 export const Container = styled.ScrollView`
     width: 100%;
@@ -10,6 +8,6 @@ export const Container = styled.ScrollView`
     padding: 5%;
     padding-top: 2%;
     background-color: #fff;
-    min-height: ${windowHeight}px;
+    min-height: 100%;
     position: relative;
 `

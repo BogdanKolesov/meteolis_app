@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Text, View } from 'react-native';
 import { AppContainer, AppScrollContainer, CalcInput, DevLogo, Paragraph, ScreenTitle } from '../../atoms';
-import { TextInput } from 'react-native-gesture-handler';
 import { NotExistButtonText, NotExistGoBackButton } from '../NotExist/NotExist.styles';
 import { Container } from '../../atoms/ViewContainer/ViewContainer.styles';
 import { MetarTafDataContainer, MetarTafInput, MetarTafInputView } from './MetarTaf.styles';
@@ -62,7 +61,7 @@ const MeterTaf = () => {
 
 
             setMeteoData([result1, result2, result3, result4]);
-            console.log(meteoData)
+            // console.log(meteoData)
         } catch (err) {
             setErr(err.message);
         } finally {
@@ -104,7 +103,6 @@ const MeterTaf = () => {
                 <NotExistGoBackButton onPress={getMeteoData}>
                     <NotExistButtonText >Приём метеоданных</NotExistButtonText>
                 </NotExistGoBackButton>
-                {/* {err && <Paragraph>{err}</Paragraph>} */}
                 {isLoading ?
                     (<Paragraph>Приём данных...</Paragraph>)
                     :
