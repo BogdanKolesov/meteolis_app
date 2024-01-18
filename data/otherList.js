@@ -15,4 +15,12 @@ export const OtherList = [
         title: 'Коэффициент пожароопасности',
         link: 'Fire'
     },
+    {
+        title: 'Расчёт боковой составляющей скорости ветра',
+        link: 'SideWind'
+    },
+    {
+        title: 'Расчёт азимута Солнца',
+        link: 'SunDirection'
+    }
 ]

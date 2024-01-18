@@ -1,4 +1,5 @@
 export const fogList = [
+
     {
         title: 'Прогноз радиациноого тумана',
         link: 'NotExist'
@@ -19,4 +20,6 @@ export const fogList = [
         title: 'Прогноз фронтального тумана',
         link: 'NotExist'
     }
+    ,
+
 ]

@@ -1,8 +1,8 @@
 
 import React, { useState } from 'react';
 import { View, Text } from 'react-native';
-import { CalcInput } from '../../../atoms';
-import { CalcContainer, CalcItem, CalcText, CalcTextContainer } from '../../../atoms/CalcComponents';
+import { Input } from '../../../atoms';
+import { Container, Container, p, Container } from '../../../atoms/CalcComponents';
 import CalcView from '../../../organismes/CalcView';
 
 const Fateev = ({ navigation }) => {
@@ -31,75 +31,75 @@ const Fateev = ({ navigation }) => {
 
     const content = (
         <>
-            <CalcContainer>
-                <CalcItem>
-                    <CalcInput
+            <Container>
+                <Container>
+                    <Input
                         onChangeText={setT850}
                         value={Number(t850)}
                     />
-                    <CalcTextContainer>
-                        <CalcText>
+                    <Container>
+                        <p>
                             - Температура на поверхности 850 ГПа
-                        </CalcText>
-                    </CalcTextContainer>
-                </CalcItem>
-                <CalcItem>
-                    <CalcInput
+                        </p>
+                    </Container>
+                </Container>
+                <Container>
+                    <Input
                         onChangeText={setT500}
                         value={Number(t500)}
                     />
-                    <CalcTextContainer>
-                        <CalcText>
+                    <Container>
+                        <p>
                             - Температура на поверхности 500 ГПа
-                        </CalcText>
-                    </CalcTextContainer>
-                </CalcItem>
-                <CalcItem>
-                    <CalcInput
+                        </p>
+                    </Container>
+                </Container>
+                <Container>
+                    <Input
                         onChangeText={setDeltatd850}
                         value={deltatd850}
                     />
-                    <CalcTextContainer>
-                        <CalcText>
+                    <Container>
+                        <p>
                             - Дефицит точки росы на поверхности 850 ГПа
-                        </CalcText>
-                    </CalcTextContainer>
-                </CalcItem>
-                <CalcItem>
-                    <CalcInput
+                        </p>
+                    </Container>
+                </Container>
+                <Container>
+                    <Input
                         onChangeText={setDeltatd700}
                         value={Number(deltatd700)}
                     />
-                    <CalcTextContainer>
-                        <CalcText>
+                    <Container>
+                        <p>
                             - Дефицит точки росы на поверхности 700 ГПа
-                        </CalcText>
-                    </CalcTextContainer>
-                </CalcItem>
-                <CalcItem>
-                    <CalcInput
+                        </p>
+                    </Container>
+                </Container>
+                <Container>
+                    <Input
                         onChangeText={setDeltatd500}
                         value={deltatd500}
                     />
-                    <CalcTextContainer>
-                        <CalcText>
+                    <Container>
+                        <p>
                             - Дефицит точки росы на поверхности 500 ГПа
-                        </CalcText>
-                    </CalcTextContainer>
-                </CalcItem>
-                <CalcItem>
-                    <CalcInput
+                        </p>
+                    </Container>
+                </Container>
+                <Container>
+                    <Input
                         onChangeText={setDeltatd600}
                         value={deltatd600}
                     />
-                    <CalcTextContainer>
-                        <CalcText>
+                    <Container>
+                        <p>
                             - Дефицит точки росы на поверхности 600 ГПа
-                        </CalcText>
-                    </CalcTextContainer>
-                </CalcItem>
-            </CalcContainer>
-            <CalcText result>Результат: {res}</CalcText>
+                        </p>
+                    </Container>
+                </Container>
+            </Container>
+            <p result>Результат: {res}</p>
         </>
     )
 

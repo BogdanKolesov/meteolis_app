@@ -43,7 +43,7 @@ export default function Home() {
                 <Tab.Screen name="METAR/TAF" component={MetarTaf} />
                 <Tab.Screen name="Карта" component={Map} />
                 <Tab.Screen name="АД" component={NotExist} />
-                <Tab.Screen name="Метеочат" component={NotExist} />
+                <Tab.Screen name="Метеочат" component={MeteoChat} />
 
 
             </Tab.Navigator>

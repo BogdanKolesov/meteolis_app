@@ -1,8 +1,8 @@
 
 import React, { useEffect, useState } from 'react';
 import { View, Text } from 'react-native';
-import { CalcInput, Picture } from '../../atoms';
-import { CalcContainer, CalcItem, CalcText, CalcTextContainer } from '../../atoms/CalcComponents';
+import { Input, Picture } from '../../atoms';
+import { Container, Container, p, Container } from '../../atoms/CalcComponents';
 import CalcView from '../../organismes/CalcView';
 import { kpo1, kpo3 } from '../../../constants/images';
 import { kpo2 } from '../../../constants/images';
@@ -78,57 +78,57 @@ const Fire = ({ navigation }) => {
 
     const content = (
         <>
-            <CalcContainer>
+            <Container>
                 <Picture source={kpo3} />
                 <Picture source={kpo1} />
                 <Picture source={kpo2} />
-                <CalcItem>
-                    <CalcInput
+                <Container>
+                    <Input
                         onChangeText={setPrev}
                         value={Number(prev)}
                     />
-                    <CalcTextContainer>
-                        <CalcText>
+                    <Container>
+                        <p>
                             - Предыдущее значение КПО
-                        </CalcText>
-                    </CalcTextContainer>
-                </CalcItem>
-                <CalcItem>
-                    <CalcInput
+                        </p>
+                    </Container>
+                </Container>
+                <Container>
+                    <Input
                         onChangeText={setWind}
                         value={Number(wind)}
                     />
-                    <CalcTextContainer>
-                        <CalcText>
+                    <Container>
+                        <p>
                             - Скорость ветра (м/с)
-                        </CalcText>
-                    </CalcTextContainer>
-                </CalcItem>
-                <CalcItem>
-                    <CalcInput
+                        </p>
+                    </Container>
+                </Container>
+                <Container>
+                    <Input
                         onChangeText={setT}
                         value={Number(t)}
                     />
-                    <CalcTextContainer>
-                        <CalcText>
+                    <Container>
+                        <p>
                             - Температура (°С)
-                        </CalcText>
-                    </CalcTextContainer>
-                </CalcItem>
-                <CalcItem>
-                    <CalcInput
+                        </p>
+                    </Container>
+                </Container>
+                <Container>
+                    <Input
                         onChangeText={setTd}
                         value={Number(td)}
                     />
-                    <CalcTextContainer>
-                        <CalcText>
+                    <Container>
+                        <p>
                             - Точка росы (°С)
-                        </CalcText>
-                    </CalcTextContainer>
-                </CalcItem>
+                        </p>
+                    </Container>
+                </Container>
 
-            </CalcContainer>
-            <CalcText result>Результат: {res}</CalcText>
+            </Container>
+            <p result>Результат: {res}</p>
         </>
     )
 

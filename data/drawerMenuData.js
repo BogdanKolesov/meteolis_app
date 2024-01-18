@@ -29,6 +29,8 @@ import FootMeters from '../components/views/FootMeters'
 import Speed from '../components/views/Speed'
 import Other from '../components/views/Other/Other'
 import Fire from '../components/views/Fire'
+import SideWind from '../components/views/Other/Other.content/SideWind'
+import SunDirection from '../components/views/Other/Other.content/SunDirection'
 
 
 export const DrawerMenuData = [
@@ -137,6 +139,8 @@ export const DrawerMenuData = [
         component: TurbulenceFly,
         options: { headerShown: false }
     },
+    //Данные из вкладки "Туманы"
+
     //FROM METEO DIRECTORY APP
 
 
@@ -182,6 +186,17 @@ export const DrawerMenuData = [
     }, {
         name: 'Fire',
         component: Fire,
+        options: { headerShown: false }
+    },
+    //NEW
+    {
+        name: 'SideWind',
+        component: SideWind,
+        options: { headerShown: false }
+    },
+    {
+        name: 'SunDirection',
+        component: SunDirection,
         options: { headerShown: false }
     },
 ]
